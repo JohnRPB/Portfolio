@@ -17,7 +17,13 @@ import {
   Visibility,
   Checkbox
 } from 'semantic-ui-react'
-import '../index.css';
+import { 
+  BrowserRouter as Router, 
+  Route, 
+  Switch,
+  NavLink
+} from "react-router-dom";
+import '../css/index.css';
 
 const Navbar = () => {
   return (
@@ -27,10 +33,18 @@ const Navbar = () => {
       size='large'
     >
       <Container>
-        <Menu.Item as='a' active>Home</Menu.Item>
-        <Menu.Item as='a'>About</Menu.Item>
-        <Menu.Item as='a'>Portfolio</Menu.Item>
-        <Menu.Item as='a'>Contact</Menu.Item>
+        <NavLink exact to="/" className="item">
+          Home
+        </NavLink>
+        <NavLink exact to="/about" className="item">
+          About
+        </NavLink>
+        <NavLink exact to="/portfolio" className="item">
+          Portfolio
+        </NavLink>
+        <NavLink exact to="/contact" className="item">
+          Contact
+        </NavLink>
       </Container>
     </Menu>
   )

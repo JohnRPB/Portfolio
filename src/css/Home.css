@@ -1,0 +1,22 @@
+
+/* Targeting header */
+
+#root > div > div > div:nth-child(1) > div.home-header {
+  background-image:url("../code10.png") !important;
+  z-index:2;
+}
+
+/* Header dividers */
+
+.ui.inverted.divider {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 1.5em;
+}
+
+/* Header checkboxes */
+
+.ui.checkbox label {
+  color: white !important;
+  margin: 1em;
+}

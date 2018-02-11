@@ -16,10 +16,11 @@ import {
   Visibility,
   Checkbox
 } from 'semantic-ui-react'
-import '../../index.css';
+import '../../css/index.css';
 import HomepageHeading from '../Home/HomePageHeading';
 import Navbar from '../Navbar';
 import Footer from './Footer';
+import HeaderRoutes from '../HeaderRoutes';
 
 class DesktopContainer extends Component {
   state = {}
@@ -34,9 +35,7 @@ class DesktopContainer extends Component {
     return (
       <Responsive {...Responsive.onlyComputer}>
         <Visibility once={false} onBottomPassed={this.showFixedMenu} onBottomPassedReverse={this.hideFixedMenu}>
-          <Segment inverted textAlign='center' style={{ minHeight: 700, padding: '1em 0em' }} vertical>
-            <HomepageHeading />
-          </Segment>
+            <HeaderRoutes />
         </Visibility>
             <Navbar />
         {children}

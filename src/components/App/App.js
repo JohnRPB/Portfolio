@@ -5,6 +5,8 @@ import HomePage from '../Home/HomePage';
 import Routes from '../../routes';
 import ResponsiveContainer from './ResponsiveContainer';
 
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 import {
   Button,
   Container,
@@ -25,9 +27,11 @@ import {
 class App extends Component {
   render() {
     return (
+    <Router>
       <ResponsiveContainer>
         <Routes />
       </ResponsiveContainer>
+    </Router>
     );
   }
 }

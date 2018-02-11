@@ -16,7 +16,7 @@ import {
   Visibility,
   Checkbox
 } from 'semantic-ui-react'
-import '../../index.css';
+import '../../css/index.css';
 import HomepageHeading from '../Home/HomePageHeading';
 
 class MobileContainer extends Component {

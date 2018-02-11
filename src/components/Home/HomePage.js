@@ -16,18 +16,15 @@ import {
   Visibility,
   Checkbox
 } from 'semantic-ui-react'
-import '../../index.css';
-import cumDev from '../../quantile-plot2.jpg';
-import ThreeImageDisplay from '../ThreeImageDisplay';
 
-/* eslint-disable react/no-multi-comp */
-/* Heads up! HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
- * such things.
- */
-/* Heads up!
- * Neither Semantic UI, nor Semantic UI React don't offer a responsive navbar, hover it can be easily implemented.
- * It can be more complicated, but you can create really flexible markup.
- */
+// Routing
+import {Link} from 'react-router-dom';
+
+// Styling
+import '../../css/Home.css';
+
+// Dependent components
+import ThreeImageDisplay from '../ThreeImageDisplay';
 
 const HomepageLayout = () => (
   <Container>
@@ -52,23 +49,16 @@ const HomepageLayout = () => (
             <ThreeImageDisplay />
           </Grid.Column>
         </Grid.Row>
-          {/*
-        <Grid.Row>
-          <Grid.Column textAlign='center'>
-            <Button size='huge'>Check Them Out</Button>
-          </Grid.Column>
-        </Grid.Row>
-          */}
       </Grid>
     </Segment>
     <Segment style={{ padding: '0em' }} vertical>
       <Grid celled='internally' columns='equal' stackable>
         <Grid.Row textAlign='center'>
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header as='h3' style={{ fontSize: '2em' }}>"Resourceful and driven"</Header>
+            <Header as='h3' style={{ fontSize: '2em' }}>"Dedicated, driven, persistent as all hell, and a natural problem solver"</Header>
             <p style={{ fontSize: '1.33em' }}>
               <Image avatar src='/assets/images/avatar/large/nan.jpg' />
-              <b>Nan</b> Chief Fun Officer Acme Toys
+              <b>Alden Vanderspek</b> Security at Electronic Arts, Inc
             </p>
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
@@ -89,7 +79,9 @@ const HomepageLayout = () => (
         fast-track scientific reviews to e-commerce applications and machine learning
         models.
         </p>
-        <Button as='a' size='large'>See it!</Button>
+        <Link exact to='/portfolio'>
+          <Button as='a' size='large'>See it!</Button>
+        </Link>
         <Divider />
         <Header as='h3' style={{ fontSize: '2em' }}>Follow my writings on Medium and CoderBastion</Header>
         <p style={{ fontSize: '1.33em' }}>
@@ -97,7 +89,7 @@ const HomepageLayout = () => (
         computer science, web development, and data science. Some of my articles are also featured
         on CoderBastion, a platform for sharing resources between web developers.
         </p>
-        <Button as='a' size='large'>Read more</Button>
+        <Button as='a' href='https://medium.com/@johannbaptista' size='large'>Read more</Button>
         <Divider
           as='h4'
           className='header'

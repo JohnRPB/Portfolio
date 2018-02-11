@@ -16,7 +16,7 @@ import {
   Visibility,
   Checkbox
 } from 'semantic-ui-react'
-import '../index.css';
+import '../css/index.css';
 import cumDev from '../quantile-plot2.jpg';
 import table from '../widget-1-302x182.jpg';
 import server from '../server1.png';
