@@ -1,0 +1,22 @@
+img {
+  border:1px solid gray;
+  position:absolute;
+}
+
+#cum-dev {
+  position:absolute;
+  transform:translate(35%,-125%);
+  z-index:1;
+}
+
+#table {
+  left:70%;
+  z-index:2;
+  transform:translateY(-50%);
+}
+
+#server {
+  left:25%;
+  z-index:0;
+  transform:translate(-5%,45%);
+}
