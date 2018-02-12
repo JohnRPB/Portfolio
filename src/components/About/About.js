@@ -2,72 +2,29 @@ import React from 'react'
 import { Container, Divider, Dropdown, Grid, Header, Image, List, Menu, Segment } from 'semantic-ui-react'
 
 const AboutPage = () => (
-  <div>
     <Container text style={{ marginTop: '7em' }}>
-      <Header as='h1'>Hi,</Header>
-      <p>I'm a developer from Davis, CA, with a passion for elegant software design, scientific research, and swing dancing. 
-  physics, but </p>
-      <p></p>
+      <Header as='h1'>Coding is how I explore the world</Header>
+      <p style={{fontSize:"20px"}}>&#8212; whether that world is of 
+      data, ideas, or people. In college, while pursuing a physics 
+      degree, I became aware of the ubiquity and power of 
+      programming, and gravitated towards coding in my spare time, 
+      using R to answer questions and settle debates. Over time, I 
+      began to build applications and take classes in computer 
+      science, and fell in love with the elegance of code. 
+      </p>
+      <p style={{fontSize:"20px"}}>
+      Today, I enjoy contributing to open source, and putting my 
+      efforts into projecs that I'm passionate about in science and 
+      technology, including an effort to fast-track the publication
+      of scientific reviews through interactive data analysis and
+      putting together an integrated api for exploring historical 
+      census data.
+      </p>
 
+      {/* Mysteries of CSS --- apparently this segment is needed 
+      to get the footer to stick to the bottom of the page */}
+      <Segment style={{ padding: '4.5em 0em' }} vertical />
     </Container>
-
-    <Segment
-      inverted
-      vertical
-      style={{ margin: '5em 0em 0em', padding: '5em 0em' }}
-    >
-      <Container textAlign='center'>
-        <Grid divided inverted stackable>
-          <Grid.Row>
-            <Grid.Column width={3}>
-              <Header inverted as='h4' content='Group 1' />
-              <List link inverted>
-                <List.Item as='a'>Link One</List.Item>
-                <List.Item as='a'>Link Two</List.Item>
-                <List.Item as='a'>Link Three</List.Item>
-                <List.Item as='a'>Link Four</List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column width={3}>
-              <Header inverted as='h4' content='Group 2' />
-              <List link inverted>
-                <List.Item as='a'>Link One</List.Item>
-                <List.Item as='a'>Link Two</List.Item>
-                <List.Item as='a'>Link Three</List.Item>
-                <List.Item as='a'>Link Four</List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column width={3}>
-              <Header inverted as='h4' content='Group 3' />
-              <List link inverted>
-                <List.Item as='a'>Link One</List.Item>
-                <List.Item as='a'>Link Two</List.Item>
-                <List.Item as='a'>Link Three</List.Item>
-                <List.Item as='a'>Link Four</List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column width={3}>
-              <Header inverted as='h4' content='Footer Header' />
-              <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-
-        <Divider inverted section />
-        <Image
-          centered
-          size='mini'
-          src='/logo.png'
-        />
-        <List horizontal inverted divided link>
-          <List.Item as='a' href='#'>Site Map</List.Item>
-          <List.Item as='a' href='#'>Contact Us</List.Item>
-          <List.Item as='a' href='#'>Terms and Conditions</List.Item>
-          <List.Item as='a' href='#'>Privacy Policy</List.Item>
-        </List>
-      </Container>
-    </Segment>
-  </div>
 )
 
 export default AboutPage; 

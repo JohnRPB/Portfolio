@@ -26,6 +26,9 @@ import '../../css/Home.css';
 // Dependent components
 import ThreeImageDisplay from '../ThreeImageDisplay';
 
+// Images
+import aldenPhoto from '../../images/alden.jpg';
+
 const HomepageLayout = () => (
   <Container>
     <Segment style={{ padding: '8em 0em' }} vertical>
@@ -57,15 +60,13 @@ const HomepageLayout = () => (
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
             <Header as='h3' style={{ fontSize: '2em' }}>"Dedicated, driven, persistent as all hell, and a natural problem solver"</Header>
             <p style={{ fontSize: '1.33em' }}>
-              <Image avatar src='/assets/images/avatar/large/nan.jpg' />
-              <b>Alden Vanderspek</b> Security at Electronic Arts, Inc
+              <b>Alden Vanderspek</b> {' '} Security at Electronic Arts, Inc
             </p>
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
             <Header as='h3' style={{ fontSize: '2em' }}>"Passionate and knowledgeable about science"</Header>
             <p style={{ fontSize: '1.33em' }}>
-              <Image avatar src='/assets/images/avatar/large/nan.jpg' />
-              <b>Nan</b> Chief Fun Officer Acme Toys
+              <b>Jordan Purdy</b>{' '} Statistician for the Oregon Government
             </p>
           </Grid.Column>
         </Grid.Row>

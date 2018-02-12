@@ -41,7 +41,7 @@ const HomepageHeading = ({mobile}) => (
       <Divider inverted />
       <Header
         as="h1"
-        content="Fullstack development"
+        content="Fullstack developer"
         inverted
         style={{
           fontSize: mobile ? '1.5em' : '3em',
@@ -52,7 +52,7 @@ const HomepageHeading = ({mobile}) => (
       <Divider inverted />
       <Header
         as="h1"
-        content="Data science"
+        content="Data scientist"
         inverted
         style={{
           fontSize: mobile ? '1.2em' : '2.2em',

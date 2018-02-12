@@ -1,0 +1,72 @@
+[
+  {
+    "title":"OpenMeta",
+    "intro":"A platform for open scientific reviews, delivering interactive analysis through R, Plotly, and OpenCPU",
+    "description":"Much more on OpenMeta",
+    "tags": { 
+      "front-end":true,
+      "back-end":true,
+      "dataScience":true,
+      "openSource":true
+    },
+    "technologies": [
+      "Node", 
+      "Express",
+      "React",
+      "Redux"
+    ],
+    "languages": [
+      "javascript",
+      "R"
+    ],
+    "displayDetails": [ 
+      "featured"
+    ]
+  },
+  {
+    "title":"e-commerce store",
+    "intro":"A platform for open scientific reviews, delivering interactive analysis through R, Plotly, and OpenCPU",
+    "description":"Much more on OpenMeta",
+    "tags": { 
+      "front-end":true,
+      "back-end":true,
+      "demo":true,
+      "dataScience":false,
+      "openSource":false
+    },
+    "technologies": [
+      "Node", 
+      "Express",
+      "Handlebars",
+      "Sprite"
+    ],
+    "languages": [
+      "javascript"
+    ],
+    "displayDetails": [ 
+    ]
+  },
+  {
+    "title":"Ponz.io",
+    "intro":"An elegant ponzi scheme, whereby registrants get increasing returns on investment",
+    "description":"Much more on project ponz",
+    "tags": { 
+      "front-end":true,
+      "back-end":true,
+      "demo":true,
+      "dataScience":false,
+      "openSource":false
+    },
+    "technologies": [
+      "Node", 
+      "Express",
+      "Handlebars"
+    ],
+    "languages": [
+      "javascript"
+    ],
+    "displayDetails": [ 
+    ]
+  }
+]
+

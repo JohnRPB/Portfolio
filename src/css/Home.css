@@ -2,7 +2,8 @@
 /* Targeting header */
 
 #root > div > div > div:nth-child(1) > div.home-header {
-  background-image:url("../code10.png") !important;
+  background-image:url("../coder-laptop.jpg") !important;
+  background-attachment:fixed;
   z-index:2;
 }
 

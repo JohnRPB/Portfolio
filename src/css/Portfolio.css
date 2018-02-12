@@ -1,0 +1,9 @@
+#root > div > div > div:nth-child(1) > div.about-heading {
+  background-image:url("../coder-laptop.jpg") !important;
+  background-attachment:fixed;
+  z-index:2;
+}
+
+.models-container {
+  transform:translateX(-50%);
+}
